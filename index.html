@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWASP PCCOE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="page1">
+         <video autoplay loop muted src="./videos/video1.mp4"></video>
+        <nav class="navbar">
+          <div class="logo">OWASP</div>
+          <div class="menu-icon" id="menu-icon">
+              &#9776;
+          </div>
+          <ul class="nav-links" id="nav-links">
+              <li class="close-icon" id="close-icon">
+                  &#10006;
+              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+        <div id="second">
+           <img src="./images/owasp_white(2).png" alt="">
+        </div>
+      </div>
+    </div>
+    <script>
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const navLinks = document.getElementById('nav-links');
+
+      menuIcon.addEventListener('click', () => {
+          navLinks.classList.add('active');
+      });
+
+      closeIcon.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+      });
+  </script>
+    <script src="script.js"></script>
+  </body>
+</html>
