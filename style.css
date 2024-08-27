@@ -136,5 +136,11 @@ body, html {
         left: 50%; /* Center horizontally on smaller screens */
         transform: translate(-50%, -50%); /* Center both horizontally and vertically */
     }
+    #page1 video{
+        height: 100%;
+        width: 100%;
+        /* object-fit: cover; */
+        position: absolute;
+    }
 }
 
